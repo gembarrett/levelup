@@ -47,6 +47,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="QQw-BC-dcN">
                                 <rect key="frame" x="18" y="400" width="564" height="31"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="aEy-e5-003"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jkc-We-RW6">
                                 <rect key="frame" x="18" y="435" width="564" height="31"/>
@@ -79,6 +82,10 @@
                             <constraint firstItem="ogw-wM-iCv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ymO-Fo-WPd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="percentageLbl" destination="qBR-iV-AOd" id="DZH-ux-lzv"/>
+                        <outlet property="rings" destination="O1l-DW-2TC" id="9Sa-ZA-icf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
