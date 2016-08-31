@@ -31,10 +31,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        rings.endArc = 0.5
-        rings.arcWidth = 35.0
         let backgroundTrackColour = UIColor(white: 0.15, alpha: 1.0)
+        rings.arcWidth = 35.0
         rings.arcBackgroundColour = backgroundTrackColour
+        rings.endArc = 0.5
         
         whiteRing.arcWidth = 25.0
         whiteRing.arcColour = UIColor.whiteColor()

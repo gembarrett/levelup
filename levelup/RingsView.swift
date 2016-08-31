@@ -11,7 +11,7 @@ import UIKit
 class RingsView: UIView {
 
     // where the arc ends
-    var endArc:CGFloat = 0.1 { // 0.0 to 1
+    var endArc:CGFloat = 0.0 { // 0.0 to 1
         // use this change in properties to draw the thing later
         didSet {
             // call this any time the endArc value changes
