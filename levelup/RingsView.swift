@@ -16,6 +16,7 @@ class RingsView: UIView {
         didSet {
             // call this any time the endArc value changes
             setNeedsDisplay()
+            print("show")
         }
     }
     // stroke width
@@ -54,13 +55,20 @@ class RingsView: UIView {
         CGContextSetLineWidth(context, arcWidth)
         CGContextSetLineCap(context, CGLineCap.Round)
         // no UIColor
-        CGContextSetStrokeColorWithColor(context, arcColour.CGColor)
+        CGContextSetStrokeColorWithColor(context, arcBackgroundColour.CGColor)
         
         // let's draw this thing
         // stick an arc on the path
-        CGContextAddArc(context, middle.x, middle.y, radius, start, end, 0)
+        CGContextAddArc(context, middle.x, middle.y, radius, 0, fullCircle, 0)
         // draw a line from path
         CGContextStrokePath(context)
+        
+        // NOW draw the arc itself
+        CGContextSetStrokeColorWithColor(context, arcColour.CGColor)
+        CGContextSetLineWidth(context, arcWidth * 0.8)
+        CGContextAddArc(context, middle.x, middle.y, radius, start, end, 0)
+        CGContextStrokePath(context)
+        
     }
 
 }

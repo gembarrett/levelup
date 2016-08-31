@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        rings.endArc = 0.5
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
