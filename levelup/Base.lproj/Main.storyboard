@@ -84,9 +84,7 @@
                     </view>
                     <connections>
                         <outlet property="percentageLbl" destination="qBR-iV-AOd" id="DZH-ux-lzv"/>
-                        <outlet property="rings" destination="O1l-DW-2TC" id="jAr-Qt-YCl"/>
-                        <outlet property="ringsGraph" destination="O1l-DW-2TC" id="aFN-S7-jlI"/>
-                        <outlet property="ringsView" destination="O1l-DW-2TC" id="vPa-Nd-tHs"/>
+                        <outlet property="rings" destination="O1l-DW-2TC" id="R56-o7-mEU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
