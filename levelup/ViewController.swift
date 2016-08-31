@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var percentageLbl: UILabel!
-
-    @IBOutlet weak var rings: UIView!
+    
+    
+    @IBOutlet weak var rings: RingsView!
+    
     @IBAction func slider(sender: UISlider) {
+        // everytime the arc length is changed in slider, run the code
+        rings.endArc = CGFloat(sender.value)
+        percentageLbl.text = String(format: "%5.2f %%", sender.value * 100)
     }
     
     override func viewDidLoad() {

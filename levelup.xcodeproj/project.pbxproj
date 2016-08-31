@@ -292,6 +292,7 @@
 				0187D6301D747F2600345142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

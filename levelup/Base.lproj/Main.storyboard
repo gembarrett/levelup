@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1l-DW-2TC">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1l-DW-2TC" customClass="RingsView" customModule="levelup" customModuleProvider="target">
                                 <rect key="frame" x="150.5" y="80" width="300" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -84,7 +84,9 @@
                     </view>
                     <connections>
                         <outlet property="percentageLbl" destination="qBR-iV-AOd" id="DZH-ux-lzv"/>
-                        <outlet property="rings" destination="O1l-DW-2TC" id="9Sa-ZA-icf"/>
+                        <outlet property="rings" destination="O1l-DW-2TC" id="jAr-Qt-YCl"/>
+                        <outlet property="ringsGraph" destination="O1l-DW-2TC" id="aFN-S7-jlI"/>
+                        <outlet property="ringsView" destination="O1l-DW-2TC" id="vPa-Nd-tHs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
