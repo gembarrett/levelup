@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var percentageLbl: UILabel!
     
-    
     @IBOutlet weak var rings: RingsView!
     
     @IBAction func slider(sender: UISlider) {

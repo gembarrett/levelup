@@ -10,19 +10,20 @@ import UIKit
 
 class RingsView: UIView {
 
-    override func drawRect(rect: CGRect) {
-        // where the arc ends
-        var endArc:CGFloat = 0.0 { // 0.0 to 1
-            // use this change in properties to draw the thing later
-            didSet {
-                // call this any time the endArc value changes
-                setNeedsDisplay()
-            }
+    // where the arc ends
+    var endArc:CGFloat = 0.0 { // 0.0 to 1
+        // use this change in properties to draw the thing later
+        didSet {
+            // call this any time the endArc value changes
+            setNeedsDisplay()
         }
-        // stroke width
-        var arcWidth:CGFloat = 10.0
-        var arcColour = UIColor.yellowColor()
-        var arcBackgroundColour = UIColor.blackColor()
+    }
+    // stroke width
+    var arcWidth:CGFloat = 10.0
+    var arcColour = UIColor.yellowColor()
+    var arcBackgroundColour = UIColor.blackColor()
+
+    override func drawRect(rect: CGRect) {
         
         // calculate radian of a full circle
         let fullCircle = 2.0 * CGFloat(M_PI)

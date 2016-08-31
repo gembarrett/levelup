@@ -58,10 +58,10 @@
 			children = (
 				0187D61F1D747F2600345142 /* AppDelegate.swift */,
 				0187D6211D747F2600345142 /* ViewController.swift */,
+				0187D6311D74884800345142 /* RingsView.swift */,
 				0187D6231D747F2600345142 /* Main.storyboard */,
 				0187D6261D747F2600345142 /* Assets.xcassets */,
 				0187D6281D747F2600345142 /* LaunchScreen.storyboard */,
-				0187D6311D74884800345142 /* RingsView.swift */,
 				0187D62B1D747F2600345142 /* Info.plist */,
 			);
 			path = levelup;
