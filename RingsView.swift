@@ -16,7 +16,7 @@ class RingsView: UIView {
         }
     }
     var ringStrokeWidth:CGFloat = 10.0
-    var ringColour = UIColor.yellowColor()
+    var ringColour = UIColor.redColor()
     var ringBackgroundColour = UIColor.blackColor()
 
     override func drawRect(rect: CGRect) {
