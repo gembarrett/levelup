@@ -1,0 +1,600 @@
+{
+	"playerstats": {
+		"steamID": "76561198073968915",
+		"gameName": "Team Fortress 2",
+		"stats": [
+			{
+				"name": "Scout.accum.iDamageDealt",
+				"value": 14502
+			},
+			{
+				"name": "Scout.accum.iDominations",
+				"value": 1
+			},
+			{
+				"name": "Scout.accum.iKillAssists",
+				"value": 28
+			},
+			{
+				"name": "Scout.accum.iNumberOfKills",
+				"value": 48
+			},
+			{
+				"name": "Scout.accum.iPlayTime",
+				"value": 10238
+			},
+			{
+				"name": "Scout.accum.iPointCaptures",
+				"value": 20
+			},
+			{
+				"name": "Scout.accum.iPointDefenses",
+				"value": 7
+			},
+			{
+				"name": "Scout.accum.iPointsScored",
+				"value": 105
+			},
+			{
+				"name": "Scout.accum.iRevenge",
+				"value": 2
+			},
+			{
+				"name": "Scout.max.iDamageDealt",
+				"value": 670
+			},
+			{
+				"name": "Scout.max.iDominations",
+				"value": 1
+			},
+			{
+				"name": "Scout.max.iKillAssists",
+				"value": 3
+			},
+			{
+				"name": "Scout.max.iNumberOfKills",
+				"value": 4
+			},
+			{
+				"name": "Scout.max.iPlayTime",
+				"value": 384
+			},
+			{
+				"name": "Scout.max.iPointCaptures",
+				"value": 2
+			},
+			{
+				"name": "Scout.max.iPointDefenses",
+				"value": 2
+			},
+			{
+				"name": "Scout.max.iPointsScored",
+				"value": 5
+			},
+			{
+				"name": "Scout.max.iRevenge",
+				"value": 1
+			},
+			{
+				"name": "Spy.accum.iDamageDealt",
+				"value": 402
+			},
+			{
+				"name": "Spy.accum.iNumberOfKills",
+				"value": 1
+			},
+			{
+				"name": "Spy.accum.iPlayTime",
+				"value": 302
+			},
+			{
+				"name": "Spy.accum.iPointsScored",
+				"value": 1
+			},
+			{
+				"name": "Spy.max.iDamageDealt",
+				"value": 128
+			},
+			{
+				"name": "Spy.max.iNumberOfKills",
+				"value": 1
+			},
+			{
+				"name": "Spy.max.iPlayTime",
+				"value": 68
+			},
+			{
+				"name": "Spy.max.iPointsScored",
+				"value": 1
+			},
+			{
+				"name": "Pyro.accum.iBuildingsDestroyed",
+				"value": 1
+			},
+			{
+				"name": "Pyro.accum.iDamageDealt",
+				"value": 24762
+			},
+			{
+				"name": "Pyro.accum.iDominations",
+				"value": 2
+			},
+			{
+				"name": "Pyro.accum.iKillAssists",
+				"value": 27
+			},
+			{
+				"name": "Pyro.accum.iNumberOfKills",
+				"value": 90
+			},
+			{
+				"name": "Pyro.accum.iPlayTime",
+				"value": 8509
+			},
+			{
+				"name": "Pyro.accum.iPointCaptures",
+				"value": 31
+			},
+			{
+				"name": "Pyro.accum.iPointDefenses",
+				"value": 15
+			},
+			{
+				"name": "Pyro.accum.iPointsScored",
+				"value": 177
+			},
+			{
+				"name": "Pyro.accum.iRevenge",
+				"value": 8
+			},
+			{
+				"name": "Pyro.max.iBuildingsDestroyed",
+				"value": 1
+			},
+			{
+				"name": "Pyro.max.iDamageDealt",
+				"value": 464
+			},
+			{
+				"name": "Pyro.max.iDominations",
+				"value": 1
+			},
+			{
+				"name": "Pyro.max.iKillAssists",
+				"value": 2
+			},
+			{
+				"name": "Pyro.max.iNumberOfKills",
+				"value": 3
+			},
+			{
+				"name": "Pyro.max.iPlayTime",
+				"value": 255
+			},
+			{
+				"name": "Pyro.max.iPointCaptures",
+				"value": 3
+			},
+			{
+				"name": "Pyro.max.iPointDefenses",
+				"value": 2
+			},
+			{
+				"name": "Pyro.max.iPointsScored",
+				"value": 8
+			},
+			{
+				"name": "Pyro.max.iRevenge",
+				"value": 2
+			},
+			{
+				"name": "Demoman.accum.iBuildingsDestroyed",
+				"value": 1
+			},
+			{
+				"name": "Demoman.accum.iDamageDealt",
+				"value": 4710
+			},
+			{
+				"name": "Demoman.accum.iKillAssists",
+				"value": 4
+			},
+			{
+				"name": "Demoman.accum.iNumberOfKills",
+				"value": 15
+			},
+			{
+				"name": "Demoman.accum.iPlayTime",
+				"value": 1797
+			},
+			{
+				"name": "Demoman.accum.iPointCaptures",
+				"value": 2
+			},
+			{
+				"name": "Demoman.accum.iPointsScored",
+				"value": 22
+			},
+			{
+				"name": "Demoman.accum.iRevenge",
+				"value": 1
+			},
+			{
+				"name": "Demoman.max.iBuildingsDestroyed",
+				"value": 1
+			},
+			{
+				"name": "Demoman.max.iDamageDealt",
+				"value": 662
+			},
+			{
+				"name": "Demoman.max.iKillAssists",
+				"value": 1
+			},
+			{
+				"name": "Demoman.max.iNumberOfKills",
+				"value": 2
+			},
+			{
+				"name": "Demoman.max.iPlayTime",
+				"value": 120
+			},
+			{
+				"name": "Demoman.max.iPointCaptures",
+				"value": 1
+			},
+			{
+				"name": "Demoman.max.iPointsScored",
+				"value": 4
+			},
+			{
+				"name": "Demoman.max.iRevenge",
+				"value": 1
+			},
+			{
+				"name": "Heavy.accum.iDamageDealt",
+				"value": 3152
+			},
+			{
+				"name": "Heavy.accum.iKillAssists",
+				"value": 7
+			},
+			{
+				"name": "Heavy.accum.iNumberOfKills",
+				"value": 7
+			},
+			{
+				"name": "Heavy.accum.iPlayTime",
+				"value": 1256
+			},
+			{
+				"name": "Heavy.accum.iPointCaptures",
+				"value": 1
+			},
+			{
+				"name": "Heavy.accum.iPointsScored",
+				"value": 12
+			},
+			{
+				"name": "Heavy.accum.iRevenge",
+				"value": 2
+			},
+			{
+				"name": "Heavy.max.iDamageDealt",
+				"value": 415
+			},
+			{
+				"name": "Heavy.max.iKillAssists",
+				"value": 2
+			},
+			{
+				"name": "Heavy.max.iNumberOfKills",
+				"value": 1
+			},
+			{
+				"name": "Heavy.max.iPlayTime",
+				"value": 153
+			},
+			{
+				"name": "Heavy.max.iPointCaptures",
+				"value": 1
+			},
+			{
+				"name": "Heavy.max.iPointsScored",
+				"value": 4
+			},
+			{
+				"name": "Heavy.max.iRevenge",
+				"value": 1
+			},
+			{
+				"name": "Sniper.accum.iDamageDealt",
+				"value": 143
+			},
+			{
+				"name": "Sniper.accum.iPlayTime",
+				"value": 156
+			},
+			{
+				"name": "Sniper.max.iDamageDealt",
+				"value": 143
+			},
+			{
+				"name": "Sniper.max.iPlayTime",
+				"value": 46
+			},
+			{
+				"name": "TF_PYRO_KILL_POSTDEATH_STAT",
+				"value": 15
+			},
+			{
+				"name": "TF_PYRO_KILL_SPIES_STAT",
+				"value": 1
+			},
+			{
+				"name": "TF_PYRO_REVEAL_SPIES_STAT",
+				"value": 10
+			},
+			{
+				"name": "TF_PYRO_BURN_SPIES_AS_YOU_STAT",
+				"value": 10
+			},
+			{
+				"name": "TF_PYRO_BURN_SNIPERS_ZOOMED_STAT",
+				"value": 2
+			},
+			{
+				"name": "TF_PYRO_BURN_MEDICS_CHARGED_STAT",
+				"value": 3
+			},
+			{
+				"name": "TF_PYRO_KILL_HEAVIES_STAT",
+				"value": 22
+			},
+			{
+				"name": "TF_PYRO_DESTROY_BUILDINGS_STAT",
+				"value": 2
+			},
+			{
+				"name": "TF_PYRO_DEFEND_POINTS_STAT",
+				"value": 24
+			},
+			{
+				"name": "TF_PYRO_KILL_GRIND_STAT",
+				"value": 136
+			},
+			{
+				"name": "TF_PYRO_CAMP_TELEPORTERS_STAT",
+				"value": 5
+			},
+			{
+				"name": "TF_PYRO_KILL_FROM_BEHIND_STAT",
+				"value": 17
+			},
+			{
+				"name": "TF_PYRO_KILL_GRIND_LARGE_STAT",
+				"value": 136
+			},
+			{
+				"name": "Pyro.accum.iFireDamage",
+				"value": 23862
+			},
+			{
+				"name": "TF_HEAVY_RECEIVE_UBER_GRIND_STAT",
+				"value": 4
+			},
+			{
+				"name": "TF_HEAVY_ASSIST_GRIND_STAT",
+				"value": 7
+			},
+			{
+				"name": "TF_HEAVY_KILL_MIDAIR_MINIGUN_STAT",
+				"value": 5
+			},
+			{
+				"name": "TF_HEAVY_DEFEND_CONTROL_POINT_STAT",
+				"value": 1
+			},
+			{
+				"name": "TF_SCOUT_LIFETIME_KILLS_STAT",
+				"value": 49
+			},
+			{
+				"name": "TF_SCOUT_DOUBLE_JUMPS_STAT",
+				"value": 110
+			},
+			{
+				"name": "TF_SCOUT_DOUBLEJUMP_KILL_STAT",
+				"value": 1
+			},
+			{
+				"name": "TF_SCOUT_START_AND_FINISH_CAP_STAT",
+				"value": 10
+			},
+			{
+				"name": "TF_SCOUT_BLOCK_CAPS_STAT",
+				"value": 6
+			},
+			{
+				"name": "TF_SCOUT_LONG_DISTANCE_RUNNER_STAT",
+				"value": 544
+			},
+			{
+				"name": "TF_SNIPER_GET_BACKSTABBED_STAT",
+				"value": 2
+			},
+			{
+				"name": "TF_HALLOWEEN_COLLECT_PUMPKINS_STAT",
+				"value": 15
+			},
+			{
+				"name": "TF_HALLOWEEN_PUMPKIN_KILL_STAT",
+				"value": 3
+			},
+			{
+				"name": "TF_DEMOMAN_KILL_X_WITH_DIRECTPIPE_STAT",
+				"value": 10
+			},
+			{
+				"name": "TF_DEMOMAN_DUO_DEMOMAN_KILLS_STAT",
+				"value": 1
+			},
+			{
+				"name": "TF_DEMOMAN_DESTROY_BUILDINGS_GRIND_STAT",
+				"value": 1
+			},
+			{
+				"name": "TF_DEMOMAN_KILL_X_SCOUTS_PYROS_STAT",
+				"value": 3
+			},
+			{
+				"name": "TF_MAPS_FOUNDRY_WIN_ROUNDS_STAT",
+				"value": 1
+			},
+			{
+				"name": "cp_dustbowl.accum.iPlayTime",
+				"value": 1150
+			},
+			{
+				"name": "cp_mountainlab.accum.iPlayTime",
+				"value": 1278
+			},
+			{
+				"name": "cp_steel.accum.iPlayTime",
+				"value": 2478
+			},
+			{
+				"name": "cp_freight_final1.accum.iPlayTime",
+				"value": 1273
+			},
+			{
+				"name": "cp_foundry.accum.iPlayTime",
+				"value": 1636
+			},
+			{
+				"name": "koth_harvest_final.accum.iPlayTime",
+				"value": 1893
+			},
+			{
+				"name": "koth_nucleus.accum.iPlayTime",
+				"value": 1859
+			},
+			{
+				"name": "koth_sawmill.accum.iPlayTime",
+				"value": 2065
+			},
+			{
+				"name": "cp_manor_event.accum.iPlayTime",
+				"value": 818
+			},
+			{
+				"name": "koth_harvest_event.accum.iPlayTime",
+				"value": 1094
+			},
+			{
+				"name": "TF_HALLOWEEN_DOOMSDAY_KILL_KARTS_STAT",
+				"value": 1
+			},
+			{
+				"name": "TF_HALLOWEEN_DOOMSDAY_COLLECT_DUCKS_STAT",
+				"value": 59
+			}
+		]
+		,
+		"achievements": [
+			{
+				"name": "TF_BURN_PLAYERSINMINIMUMTIME",
+				"achieved": 1
+			},
+			{
+				"name": "TF_KILL_NEMESIS",
+				"achieved": 1
+			},
+			{
+				"name": "TF_WIN_MULTIPLEGAMES",
+				"achieved": 1
+			},
+			{
+				"name": "TF_PYRO_SIMULBURN_SCOUTS",
+				"achieved": 1
+			},
+			{
+				"name": "TF_PYRO_KILL_POSTDEATH",
+				"achieved": 1
+			},
+			{
+				"name": "TF_PYRO_REVEAL_SPIES",
+				"achieved": 1
+			},
+			{
+				"name": "TF_PYRO_CAMP_POSITION",
+				"achieved": 1
+			},
+			{
+				"name": "TF_PYRO_BURN_SPIES_AS_YOU",
+				"achieved": 1
+			},
+			{
+				"name": "TF_PYRO_BURN_MEDICS_CHARGED",
+				"achieved": 1
+			},
+			{
+				"name": "TF_PYRO_BURN_RJ_SOLDIER",
+				"achieved": 1
+			},
+			{
+				"name": "TF_PYRO_BURN_MEDICPAIR",
+				"achieved": 1
+			},
+			{
+				"name": "TF_PYRO_KILL_TEAMWORK",
+				"achieved": 1
+			},
+			{
+				"name": "TF_PYRO_DOUBLE_KO",
+				"achieved": 1
+			},
+			{
+				"name": "TF_PYRO_ACHIEVE_PROGRESS1",
+				"achieved": 1
+			},
+			{
+				"name": "TF_HEAVY_DAMAGE_TAKEN",
+				"achieved": 1
+			},
+			{
+				"name": "TF_SCOUT_SURVIVE_DAMAGE",
+				"achieved": 1
+			},
+			{
+				"name": "TF_SCOUT_CAPTURE_LAST_POINT",
+				"achieved": 1
+			},
+			{
+				"name": "TF_SCOUT_FAST_CAP",
+				"achieved": 1
+			},
+			{
+				"name": "TF_SCOUT_START_AND_FINISH_CAP",
+				"achieved": 1
+			},
+			{
+				"name": "TF_SCOUT_LONG_DISTANCE_RUNNER",
+				"achieved": 1
+			},
+			{
+				"name": "TF_HALLOWEEN_DOMINATE_FOR_HAT",
+				"achieved": 1
+			},
+			{
+				"name": "TF_MAPS_FOUNDRY_PUSH_BACK_AND_WIN",
+				"achieved": 1
+			},
+			{
+				"name": "TF_DOMINATE_FOR_GOGGLES",
+				"achieved": 1
+			}
+		]
+
+	}
+}

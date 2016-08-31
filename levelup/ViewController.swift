@@ -11,35 +11,29 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var percentage: UILabel!
-    @IBOutlet weak var yellowRing: RingsView!
-    @IBOutlet weak var whiteRing: RingsView!
     @IBOutlet weak var redRing: RingsView!
-    @IBAction func yellowSlider(sender: UISlider) {
-        yellowRing.endRing = CGFloat(sender.value)
-        percentage.text = String(format:" %5.2f %%", sender.value * 100)
-    }
-    @IBAction func whiteSlider(sender: UISlider) {
-        whiteRing.endRing = CGFloat(sender.value)
-    }
-    @IBAction func redSlider(sender: UISlider) {
-        redRing.endRing = CGFloat(sender.value)
-    }
+    @IBOutlet weak var orangeRing: RingsView!
+    @IBOutlet weak var yellowRing: RingsView!
+//    @IBAction func whiteSlider(sender: UISlider) {
+//        whiteRing.endRing = CGFloat(sender.value)
+//    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        yellowRing.endRing = 0.5
-        yellowRing.ringStrokeWidth = 35.0
+        redRing.endRing = 0.5
+        redRing.ringStrokeWidth = 35.0
         let backgroundRingColour = UIColor(white: 0.15, alpha: 1.0)
-        yellowRing.ringBackgroundColour = backgroundRingColour
-        
-        whiteRing.ringStrokeWidth = 30.0
-        whiteRing.ringColour = UIColor.init(red: 156.0/255.0, green: 255.0/255.0, blue: 7.0/255.0, alpha: 1.0)
-        whiteRing.endRing = 0.5
-        whiteRing.ringBackgroundColour = backgroundRingColour
-        
-        redRing.endRing = 0.25
-        redRing.ringColour = UIColor.init(red: 28.0/255.0, green: 217.0/255.0, blue: 253.0/255.0, alpha: 1.0)
-        redRing.ringStrokeWidth = 25.0
         redRing.ringBackgroundColour = backgroundRingColour
+        
+        orangeRing.ringStrokeWidth = 30.0
+        orangeRing.ringColour = UIColor.orangeColor()
+        orangeRing.endRing = 0.5
+        orangeRing.ringBackgroundColour = backgroundRingColour
+        
+        yellowRing.endRing = 0.25
+        yellowRing.ringColour = UIColor.yellowColor()
+        yellowRing.ringStrokeWidth = 25.0
+        yellowRing.ringBackgroundColour = backgroundRingColour
     }
 
     override func didReceiveMemoryWarning() {
