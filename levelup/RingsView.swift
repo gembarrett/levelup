@@ -12,16 +12,22 @@ class RingsView: UIView {
 
     override func drawRect(rect: CGRect) {
         // where the arc ends
-        var endArc:CGFloat = 0.0 // 0.0 to 1
+        var endArc:CGFloat = 0.0 { // 0.0 to 1
+            // use this change in properties to draw the thing later
+            didSet {
+                // call this any time the endArc value changes
+                setNeedsDisplay()
+            }
+        }
         // stroke width
         var arcWidth:CGFloat = 10.0
-        var arcColor = UIColor.yellowColor()
-        var arcBackgroundColor = UIColor.blackColor()
+        var arcColour = UIColor.yellowColor()
+        var arcBackgroundColour = UIColor.blackColor()
         
         // calculate radian of a full circle
         let fullCircle = 2.0 * CGFloat(M_PI)
         // use CGFloat between 0 and 1, multiplied by fullCircle, to describe any angle
-        // move back to 12
+        // move back to 12 (otherwise starts at 3)
         let start:CGFloat = -0.25 * fullCircle
         // use ending point from earlier with radian constant and offset by start
         let end:CGFloat = endArc * fullCircle + start
@@ -38,6 +44,22 @@ class RingsView: UIView {
         } else {
             radius = (CGRectGetHeight(rect) - arcWidth / 2.0)
         }
+        
+        // can't draw without context
+        let context = UIGraphicsGetCurrentContext()
+        // specify colours
+        let colours = CGColorSpaceCreateDeviceRGB()
+        // stroke settings
+        CGContextSetLineWidth(context, arcWidth)
+        CGContextSetLineCap(context, CGLineCap.Round)
+        // no UIColor
+        CGContextSetStrokeColorWithColor(context, arcColour.CGColor)
+        
+        // let's draw this thing
+        // stick an arc on the path
+        CGContextAddArc(context, middle.x, middle.y, radius, start, end, 0)
+        // draw a line from path
+        CGContextStrokePath(context)
     }
 
 }
