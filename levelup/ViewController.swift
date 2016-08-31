@@ -31,14 +31,14 @@ class ViewController: UIViewController {
         let backgroundRingColour = UIColor(white: 0.15, alpha: 1.0)
         yellowRing.ringBackgroundColour = backgroundRingColour
         
-        whiteRing.ringStrokeWidth = 25.0
+        whiteRing.ringStrokeWidth = 30.0
         whiteRing.ringColour = UIColor.init(red: 156.0/255.0, green: 255.0/255.0, blue: 7.0/255.0, alpha: 1.0)
         whiteRing.endRing = 0.5
         whiteRing.ringBackgroundColour = backgroundRingColour
         
         redRing.endRing = 0.25
         redRing.ringColour = UIColor.init(red: 28.0/255.0, green: 217.0/255.0, blue: 253.0/255.0, alpha: 1.0)
-        redRing.ringStrokeWidth = 20.0
+        redRing.ringStrokeWidth = 25.0
         redRing.ringBackgroundColour = backgroundRingColour
     }
 
