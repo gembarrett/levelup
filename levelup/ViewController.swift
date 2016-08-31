@@ -14,11 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var yellowRing: RingsView!
     @IBAction func yellowSlider(sender: UISlider) {
         yellowRing.endRing = CGFloat(sender.value)
-        percentage.text = String(format:" %5.2f %%", sender.value)
+        percentage.text = String(format:" %5.2f %%", sender.value * 100)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        yellowRing.endRing = 0.5
+        yellowRing.ringStrokeWidth = 35.0
     }
 
     override func didReceiveMemoryWarning() {
