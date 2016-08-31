@@ -28,6 +28,17 @@ class RingsView: UIView {
         } else {
             radius = (CGRectGetHeight(rect) - ringStrokeWidth) / 2.0
         }
+        
+        let context = UIGraphicsGetCurrentContext()
+        
+        let colours = CGColorSpaceCreateDeviceRGB()
+        
+        CGContextSetLineWidth(context, ringStrokeWidth)
+        CGContextSetLineCap(context, CGLineCap.Round)
+        CGContextSetStrokeColorWithColor(context, ringColour.CGColor)
+        
+        CGContextAddArc(context, middleBit.x, middleBit.y, radius, start, end, 0)
+        CGContextStrokePath(context)
     }
 
 }
