@@ -22,6 +22,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vam-ju-d70">
                                 <rect key="frame" x="18" y="400" width="564" height="31"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="yellowSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="XNe-1K-AYx"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Mam-C2-nZH">
                                 <rect key="frame" x="18" y="435" width="564" height="31"/>
@@ -48,7 +51,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnE-O3-eFw">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnE-O3-eFw" customClass="RingsView" customModule="levelup" customModuleProvider="target">
                                 <rect key="frame" x="150" y="80" width="300" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -79,6 +82,10 @@
                             <constraint firstItem="NVW-uE-ZZ8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="yqa-tL-E7z"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="percentage" destination="j2t-sP-PdO" id="biq-Vd-lSq"/>
+                        <outlet property="yellowRing" destination="wnE-O3-eFw" id="hWF-rR-cVo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

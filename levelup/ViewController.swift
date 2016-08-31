@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var percentage: UILabel!
+    @IBOutlet weak var yellowRing: RingsView!
+    @IBAction func yellowSlider(sender: UISlider) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

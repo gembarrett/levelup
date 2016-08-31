@@ -12,6 +12,7 @@
 		0121A57C1D770FFE00DDCC22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0121A57A1D770FFE00DDCC22 /* Main.storyboard */; };
 		0121A57E1D770FFE00DDCC22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0121A57D1D770FFE00DDCC22 /* Assets.xcassets */; };
 		0121A5811D770FFE00DDCC22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0121A57F1D770FFE00DDCC22 /* LaunchScreen.storyboard */; };
+		0121A5891D7764DE00DDCC22 /* RingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121A5881D7764DE00DDCC22 /* RingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0121A57D1D770FFE00DDCC22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0121A5801D770FFE00DDCC22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0121A5821D770FFE00DDCC22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0121A5881D7764DE00DDCC22 /* RingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RingsView.swift; path = ../RingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				0121A5761D770FFE00DDCC22 /* AppDelegate.swift */,
 				0121A5781D770FFE00DDCC22 /* ViewController.swift */,
+				0121A5881D7764DE00DDCC22 /* RingsView.swift */,
 				0121A57A1D770FFE00DDCC22 /* Main.storyboard */,
 				0121A57D1D770FFE00DDCC22 /* Assets.xcassets */,
 				0121A57F1D770FFE00DDCC22 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0121A5791D770FFE00DDCC22 /* ViewController.swift in Sources */,
+				0121A5891D7764DE00DDCC22 /* RingsView.swift in Sources */,
 				0121A5771D770FFE00DDCC22 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
