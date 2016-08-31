@@ -53,9 +53,31 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnE-O3-eFw" customClass="RingsView" customModule="levelup" customModuleProvider="target">
                                 <rect key="frame" x="150" y="80" width="300" height="300"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GlG-X4-f0a">
+                                        <rect key="frame" x="50" y="50" width="200" height="200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5MX-wo-V2w">
+                                                <rect key="frame" x="33.5" y="33.5" width="133" height="133"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="5MX-wo-V2w" firstAttribute="height" secondItem="GlG-X4-f0a" secondAttribute="height" multiplier="2:3" id="Nvr-8n-rgx"/>
+                                            <constraint firstItem="5MX-wo-V2w" firstAttribute="centerX" secondItem="GlG-X4-f0a" secondAttribute="centerX" id="O6L-DF-rGD"/>
+                                            <constraint firstItem="5MX-wo-V2w" firstAttribute="width" secondItem="GlG-X4-f0a" secondAttribute="width" multiplier="2:3" id="bTa-0y-y56"/>
+                                            <constraint firstItem="5MX-wo-V2w" firstAttribute="centerY" secondItem="GlG-X4-f0a" secondAttribute="centerY" id="sT8-XH-zZ6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="GlG-X4-f0a" firstAttribute="width" secondItem="wnE-O3-eFw" secondAttribute="width" multiplier="2:3" id="EbX-8h-HSW"/>
+                                    <constraint firstItem="GlG-X4-f0a" firstAttribute="height" secondItem="wnE-O3-eFw" secondAttribute="height" multiplier="2:3" id="H2C-oG-Gx3"/>
                                     <constraint firstAttribute="width" constant="300" id="Pig-Fs-lpY"/>
+                                    <constraint firstItem="GlG-X4-f0a" firstAttribute="centerX" secondItem="wnE-O3-eFw" secondAttribute="centerX" id="aVm-Em-8z1"/>
+                                    <constraint firstItem="GlG-X4-f0a" firstAttribute="centerY" secondItem="wnE-O3-eFw" secondAttribute="centerY" id="ncx-tk-Drn"/>
                                     <constraint firstAttribute="height" constant="300" id="urC-ta-bEI"/>
                                 </constraints>
                             </view>

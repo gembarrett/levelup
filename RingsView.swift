@@ -39,8 +39,16 @@ class RingsView: UIView {
         
         CGContextSetLineWidth(context, ringStrokeWidth)
         CGContextSetLineCap(context, CGLineCap.Round)
-        CGContextSetStrokeColorWithColor(context, ringColour.CGColor)
         
+        // dark ring behind yellow
+        CGContextSetStrokeColorWithColor(context, ringBackgroundColour.CGColor)
+        CGContextAddArc(context, middleBit.x, middleBit.y, radius, 0, fullLoop, 0)
+        CGContextStrokePath(context)
+        
+        // yellow ring
+        CGContextSetStrokeColorWithColor(context, ringColour.CGColor)
+        // reduce width of stroke a bit so the background shows
+        CGContextSetLineWidth(context, ringStrokeWidth * 0.8)
         CGContextAddArc(context, middleBit.x, middleBit.y, radius, start, end, 0)
         CGContextStrokePath(context)
     }

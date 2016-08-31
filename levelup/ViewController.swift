@@ -20,6 +20,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         yellowRing.endRing = 0.5
         yellowRing.ringStrokeWidth = 35.0
+        let backgroundRingColour = UIColor(white: 0.15, alpha: 1.0)
+        yellowRing.ringBackgroundColour = backgroundRingColour
     }
 
     override func didReceiveMemoryWarning() {
