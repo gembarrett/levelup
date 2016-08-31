@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var percentage: UILabel!
     @IBOutlet weak var yellowRing: RingsView!
     @IBAction func yellowSlider(sender: UISlider) {
+        yellowRing.endRing = CGFloat(sender.value)
+        percentage.text = String(format:" %5.2f %%", sender.value)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,7 +10,11 @@ import UIKit
 
 class RingsView: UIView {
     
-    var endRing:CGFloat = 0.0
+    var endRing:CGFloat = 0.0 {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     var ringStrokeWidth:CGFloat = 10.0
     var ringColour = UIColor.yellowColor()
     var ringBackgroundColour = UIColor.blackColor()
