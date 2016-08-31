@@ -1,3 +1,4 @@
+
 Created by https://www.gitignore.io/api/macos,xcode,swift
 
 ### macOS ###
@@ -122,4 +123,7 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c790cb6d3d8c775b3e5e702f10aed149d7ab4584
