@@ -22,15 +22,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1l-DW-2TC" customClass="RingsView" customModule="levelup" customModuleProvider="target">
                                 <rect key="frame" x="150.5" y="80" width="300" height="300"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PmN-Rx-2Wl">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PmN-Rx-2Wl" customClass="RingsView" customModule="levelup" customModuleProvider="target">
                                         <rect key="frame" x="50" y="50" width="200" height="200"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSt-Pq-i5Z">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSt-Pq-i5Z" customClass="RingsView" customModule="levelup" customModuleProvider="target">
                                                 <rect key="frame" x="33" y="33.5" width="133" height="133"/>
-                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="SSt-Pq-i5Z" firstAttribute="centerY" secondItem="PmN-Rx-2Wl" secondAttribute="centerY" id="Ibd-Re-aOF"/>
                                             <constraint firstItem="SSt-Pq-i5Z" firstAttribute="height" secondItem="PmN-Rx-2Wl" secondAttribute="height" multiplier="2:3" id="NWJ-ns-7jT"/>
@@ -39,7 +39,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="PmN-Rx-2Wl" firstAttribute="centerX" secondItem="O1l-DW-2TC" secondAttribute="centerX" id="3CM-RX-S32"/>
                                     <constraint firstAttribute="height" constant="300" id="4Cq-u7-6mk"/>
@@ -76,10 +76,16 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jkc-We-RW6">
                                 <rect key="frame" x="18" y="435" width="564" height="31"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="whiteSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="83d-ab-d8m"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4Lg-eb-xad">
                                 <rect key="frame" x="18" y="470" width="564" height="31"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="redSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="uR7-Tk-Bgr"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -106,7 +112,9 @@
                     </view>
                     <connections>
                         <outlet property="percentageLbl" destination="qBR-iV-AOd" id="DZH-ux-lzv"/>
+                        <outlet property="redRing" destination="SSt-Pq-i5Z" id="FHI-eq-9O8"/>
                         <outlet property="rings" destination="O1l-DW-2TC" id="R56-o7-mEU"/>
+                        <outlet property="whiteRing" destination="PmN-Rx-2Wl" id="P8B-OE-z63"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
