@@ -11,12 +11,11 @@ import UIKit
 class RingsView: UIView {
 
     // where the arc ends
-    var endArc:CGFloat = 0.0 { // 0.0 to 1
+    var endArc:CGFloat = 0.1 { // 0.0 to 1
         // use this change in properties to draw the thing later
         didSet {
             // call this any time the endArc value changes
             setNeedsDisplay()
-            print("show")
         }
     }
     // stroke width
@@ -54,9 +53,11 @@ class RingsView: UIView {
         // stroke settings
         CGContextSetLineWidth(context, arcWidth)
         CGContextSetLineCap(context, CGLineCap.Round)
+        
+        // circle background drawn first because back to front
+
         // no UIColor
         CGContextSetStrokeColorWithColor(context, arcBackgroundColour.CGColor)
-        
         // let's draw this thing
         // stick an arc on the path
         CGContextAddArc(context, middle.x, middle.y, radius, 0, fullCircle, 0)

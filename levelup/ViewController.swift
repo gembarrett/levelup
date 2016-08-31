@@ -20,9 +20,11 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        rings.endArc = 0.5
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        rings.endArc = 0.5
+        rings.arcWidth = 35.0
+        let backgroundTrackColour = UIColor(white: 0.15, alpha: 1.0)
+        rings.arcBackgroundColour = backgroundTrackColour
     }
 
     override func didReceiveMemoryWarning() {

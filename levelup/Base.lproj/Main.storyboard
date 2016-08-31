@@ -21,10 +21,32 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1l-DW-2TC" customClass="RingsView" customModule="levelup" customModuleProvider="target">
                                 <rect key="frame" x="150.5" y="80" width="300" height="300"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PmN-Rx-2Wl">
+                                        <rect key="frame" x="50" y="50" width="200" height="200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSt-Pq-i5Z">
+                                                <rect key="frame" x="33" y="33.5" width="133" height="133"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="SSt-Pq-i5Z" firstAttribute="centerY" secondItem="PmN-Rx-2Wl" secondAttribute="centerY" id="Ibd-Re-aOF"/>
+                                            <constraint firstItem="SSt-Pq-i5Z" firstAttribute="height" secondItem="PmN-Rx-2Wl" secondAttribute="height" multiplier="2:3" id="NWJ-ns-7jT"/>
+                                            <constraint firstItem="SSt-Pq-i5Z" firstAttribute="width" secondItem="PmN-Rx-2Wl" secondAttribute="width" multiplier="2:3" id="Tex-Zx-9uF"/>
+                                            <constraint firstItem="SSt-Pq-i5Z" firstAttribute="centerX" secondItem="PmN-Rx-2Wl" secondAttribute="centerX" id="VRM-XL-bi7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="PmN-Rx-2Wl" firstAttribute="centerX" secondItem="O1l-DW-2TC" secondAttribute="centerX" id="3CM-RX-S32"/>
                                     <constraint firstAttribute="height" constant="300" id="4Cq-u7-6mk"/>
+                                    <constraint firstItem="PmN-Rx-2Wl" firstAttribute="height" secondItem="O1l-DW-2TC" secondAttribute="height" multiplier="2:3" id="9Wg-16-SSE"/>
+                                    <constraint firstItem="PmN-Rx-2Wl" firstAttribute="width" secondItem="O1l-DW-2TC" secondAttribute="width" multiplier="2:3" id="Kf1-Hb-HjF"/>
                                     <constraint firstAttribute="width" constant="300" id="oNe-Pw-qNs"/>
+                                    <constraint firstItem="PmN-Rx-2Wl" firstAttribute="centerY" secondItem="O1l-DW-2TC" secondAttribute="centerY" id="tZH-Zd-aKY"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Damage:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogw-wM-iCv">
@@ -89,6 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="346"/>
         </scene>
     </scenes>
 </document>
