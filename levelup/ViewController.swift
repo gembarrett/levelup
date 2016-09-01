@@ -17,7 +17,11 @@ class ViewController: UIViewController {
 //    @IBAction func whiteSlider(sender: UISlider) {
 //        whiteRing.endRing = CGFloat(sender.value)
 //    }
-
+    
+    @IBOutlet weak var scoutTab: UITabBarItem!
+    @IBOutlet weak var pyroTab: UITabBarItem!
+    @IBOutlet weak var demomanTab: UITabBarItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         redRing.endRing = 0.5

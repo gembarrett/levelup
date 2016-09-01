@@ -94,9 +94,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="demomanTab" destination="lTp-YW-jyF" id="cNM-wD-Jn2"/>
                         <outlet property="orangeRing" destination="GlG-X4-f0a" id="jKO-Lr-lCg"/>
                         <outlet property="percentage" destination="j2t-sP-PdO" id="biq-Vd-lSq"/>
+                        <outlet property="pyroTab" destination="LNQ-mZ-ui4" id="YMS-sy-Yij"/>
                         <outlet property="redRing" destination="wnE-O3-eFw" id="4Fn-ff-tux"/>
+                        <outlet property="scoutTab" destination="96x-QP-AfA" id="nce-wJ-4jj"/>
                         <outlet property="yellowRing" destination="5MX-wo-V2w" id="GzP-Uh-O3z"/>
                     </connections>
                 </viewController>
