@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -70,24 +69,23 @@
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e36-km-PQj">
                                 <rect key="frame" x="0.0" y="551" width="600" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="e36-km-PQj" secondAttribute="height" multiplier="600:49" id="nbX-Qo-hky"/>
-                                </constraints>
                                 <items>
-                                    <tabBarItem title="Scout" id="96x-QP-AfA"/>
-                                    <tabBarItem title="Pyro" id="LNQ-mZ-ui4"/>
-                                    <tabBarItem title="Demoman" id="lTp-YW-jyF"/>
+                                    <tabBarItem title="Scout" image="scout.png" id="96x-QP-AfA"/>
+                                    <tabBarItem title="Pyro" image="pyro.png" id="LNQ-mZ-ui4"/>
+                                    <tabBarItem title="Demoman" image="demoman.png" id="lTp-YW-jyF"/>
                                 </items>
                             </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wnE-O3-eFw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2xB-nc-op0"/>
+                            <constraint firstItem="e36-km-PQj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5nl-Ab-BdP"/>
                             <constraint firstItem="wnE-O3-eFw" firstAttribute="top" secondItem="NVW-uE-ZZ8" secondAttribute="bottom" constant="10" id="CLd-wp-Y11"/>
                             <constraint firstItem="e36-km-PQj" firstAttribute="centerX" secondItem="wnE-O3-eFw" secondAttribute="centerX" id="EXE-Gv-xRQ"/>
                             <constraint firstItem="NVW-uE-ZZ8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="FX3-Wr-lQ9"/>
                             <constraint firstItem="j2t-sP-PdO" firstAttribute="leading" secondItem="NVW-uE-ZZ8" secondAttribute="trailing" constant="5" id="Tyd-2g-Lug"/>
                             <constraint firstAttribute="trailingMargin" secondItem="j2t-sP-PdO" secondAttribute="trailing" id="Vvo-ly-F6z"/>
+                            <constraint firstItem="e36-km-PQj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="beZ-sL-lcz"/>
                             <constraint firstItem="j2t-sP-PdO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cXb-OE-8FI"/>
                             <constraint firstItem="e36-km-PQj" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="d0y-bP-xCA"/>
                             <constraint firstItem="j2t-sP-PdO" firstAttribute="width" secondItem="NVW-uE-ZZ8" secondAttribute="width" multiplier="1:3" id="hFH-cX-zqh"/>
@@ -107,4 +105,9 @@
             <point key="canvasLocation" x="215" y="360"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="demoman.png" width="30" height="30"/>
+        <image name="pyro.png" width="30" height="30"/>
+        <image name="scout.png" width="30" height="30"/>
+    </resources>
 </document>

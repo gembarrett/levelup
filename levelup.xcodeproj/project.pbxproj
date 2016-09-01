@@ -14,6 +14,9 @@
 		0121A5811D770FFE00DDCC22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0121A57F1D770FFE00DDCC22 /* LaunchScreen.storyboard */; };
 		0121A5891D7764DE00DDCC22 /* RingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121A5881D7764DE00DDCC22 /* RingsView.swift */; };
 		0121A58B1D779F6D00DDCC22 /* tf2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0121A58A1D779F6D00DDCC22 /* tf2.json */; };
+		0121A58F1D77AA0500DDCC22 /* demoman.png in Resources */ = {isa = PBXBuildFile; fileRef = 0121A58C1D77AA0500DDCC22 /* demoman.png */; };
+		0121A5901D77AA0500DDCC22 /* pyro.png in Resources */ = {isa = PBXBuildFile; fileRef = 0121A58D1D77AA0500DDCC22 /* pyro.png */; };
+		0121A5911D77AA0500DDCC22 /* scout.png in Resources */ = {isa = PBXBuildFile; fileRef = 0121A58E1D77AA0500DDCC22 /* scout.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		0121A5821D770FFE00DDCC22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0121A5881D7764DE00DDCC22 /* RingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RingsView.swift; path = ../RingsView.swift; sourceTree = "<group>"; };
 		0121A58A1D779F6D00DDCC22 /* tf2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tf2.json; sourceTree = "<group>"; };
+		0121A58C1D77AA0500DDCC22 /* demoman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demoman.png; sourceTree = "<group>"; };
+		0121A58D1D77AA0500DDCC22 /* pyro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pyro.png; sourceTree = "<group>"; };
+		0121A58E1D77AA0500DDCC22 /* scout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scout.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,9 @@
 				0121A57D1D770FFE00DDCC22 /* Assets.xcassets */,
 				0121A57F1D770FFE00DDCC22 /* LaunchScreen.storyboard */,
 				0121A5821D770FFE00DDCC22 /* Info.plist */,
+				0121A58C1D77AA0500DDCC22 /* demoman.png */,
+				0121A58D1D77AA0500DDCC22 /* pyro.png */,
+				0121A58E1D77AA0500DDCC22 /* scout.png */,
 				0121A58A1D779F6D00DDCC22 /* tf2.json */,
 			);
 			path = levelup;
@@ -131,7 +140,10 @@
 				0121A58B1D779F6D00DDCC22 /* tf2.json in Resources */,
 				0121A5811D770FFE00DDCC22 /* LaunchScreen.storyboard in Resources */,
 				0121A57E1D770FFE00DDCC22 /* Assets.xcassets in Resources */,
+				0121A58F1D77AA0500DDCC22 /* demoman.png in Resources */,
+				0121A5911D77AA0500DDCC22 /* scout.png in Resources */,
 				0121A57C1D770FFE00DDCC22 /* Main.storyboard in Resources */,
+				0121A5901D77AA0500DDCC22 /* pyro.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
