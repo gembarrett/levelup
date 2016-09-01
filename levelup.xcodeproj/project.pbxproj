@@ -67,10 +67,10 @@
 			children = (
 				0121A5761D770FFE00DDCC22 /* AppDelegate.swift */,
 				0121A5781D770FFE00DDCC22 /* ViewController.swift */,
-				0121A5921D77AECC00DDCC22 /* SteamData.swift */,
 				0121A5881D7764DE00DDCC22 /* RingsView.swift */,
 				0121A57A1D770FFE00DDCC22 /* Main.storyboard */,
 				0121A57D1D770FFE00DDCC22 /* Assets.xcassets */,
+				0121A5921D77AECC00DDCC22 /* SteamData.swift */,
 				0121A57F1D770FFE00DDCC22 /* LaunchScreen.storyboard */,
 				0121A5821D770FFE00DDCC22 /* Info.plist */,
 				0121A58C1D77AA0500DDCC22 /* demoman.png */,

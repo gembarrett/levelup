@@ -15,4 +15,7 @@ class SteamData {
 //    
 //    let jsonDict = NSJSONSerialization.JSONObjectWithData(jsonData, options: nil, error: &error) as NSDictionary
     
+    var damageDealt = 5000
+    var kills = 20
+    var points = 100
 }
