@@ -24,12 +24,20 @@ class ViewController: UIViewController, UITabBarDelegate {
         dataTabs.selectedItem = killsTab
         switch item.tag {
         case 1:
-            print("first")
-            
+            print("kills")
+            redRing.endRing = 0.48
+            orangeRing.endRing = 0.90
+            yellowRing.endRing = 0.15
         case 2:
-            print("second")
+            print("damage")
+            redRing.endRing = 0.14502
+            orangeRing.endRing = 0.24762
+            yellowRing.endRing = 0.04710
         case 3:
-            print("third")
+            print("points")
+            redRing.endRing = 0.105
+            orangeRing.endRing = 0.177
+            yellowRing.endRing = 0.022
         default:
             break
         }
@@ -39,21 +47,18 @@ class ViewController: UIViewController, UITabBarDelegate {
     override func viewDidLoad() {
         dataTab(dataTabs, didSelectItem: killsTab)
         super.viewDidLoad()
-        redRing.endRing = 0.15
+        
         redRing.ringStrokeWidth = 35.0
         let backgroundRingColour = UIColor(white: 0.15, alpha: 1.0)
         redRing.ringBackgroundColour = backgroundRingColour
-        
-        orangeRing.ringStrokeWidth = 30.0
+
         orangeRing.ringColour = UIColor.orangeColor()
-        orangeRing.endRing = 0.35
+        orangeRing.ringStrokeWidth = 30.0
         orangeRing.ringBackgroundColour = backgroundRingColour
         
-        yellowRing.endRing = 0.75
         yellowRing.ringColour = UIColor.yellowColor()
         yellowRing.ringStrokeWidth = 25.0
         yellowRing.ringBackgroundColour = backgroundRingColour
-        
     }
 
     override func didReceiveMemoryWarning() {
