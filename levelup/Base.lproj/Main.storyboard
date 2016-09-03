@@ -52,9 +52,9 @@
                                 <rect key="frame" x="0.0" y="551" width="600" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem tag="1" title="Kills" image="scout.png" id="96x-QP-AfA"/>
-                                    <tabBarItem tag="2" title="Damage" image="pyro.png" id="LNQ-mZ-ui4"/>
-                                    <tabBarItem tag="3" title="Points" image="demoman.png" id="lTp-YW-jyF"/>
+                                    <tabBarItem tag="1" title="Kills" id="96x-QP-AfA"/>
+                                    <tabBarItem tag="2" title="Damage" id="LNQ-mZ-ui4"/>
+                                    <tabBarItem tag="3" title="Points" id="lTp-YW-jyF"/>
                                 </items>
                             </tabBar>
                         </subviews>
@@ -69,8 +69,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="characterTabs" destination="e36-km-PQj" id="eBl-fW-Xzf"/>
                         <outlet property="damageTab" destination="LNQ-mZ-ui4" id="LZr-bl-fQH"/>
+                        <outlet property="dataTabs" destination="e36-km-PQj" id="0TE-Q8-a9r"/>
                         <outlet property="killsTab" destination="96x-QP-AfA" id="3b3-bW-aaU"/>
                         <outlet property="orangeRing" destination="GlG-X4-f0a" id="jKO-Lr-lCg"/>
                         <outlet property="pointsTab" destination="lTp-YW-jyF" id="bR2-zA-JST"/>
@@ -83,9 +83,4 @@
             <point key="canvasLocation" x="215" y="360"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="demoman.png" width="30" height="30"/>
-        <image name="pyro.png" width="30" height="30"/>
-        <image name="scout.png" width="30" height="30"/>
-    </resources>
 </document>

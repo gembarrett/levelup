@@ -18,13 +18,14 @@ class ViewController: UIViewController, UITabBarDelegate {
     @IBOutlet weak var damageTab: UITabBarItem!
     @IBOutlet weak var pointsTab: UITabBarItem!
     
-    @IBOutlet weak var characterTabs: UITabBar!
+    @IBOutlet weak var dataTabs: UITabBar!
     
-    func characterTab(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
+    func dataTab(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
+        dataTabs.selectedItem = killsTab
         switch item.tag {
         case 1:
             print("first")
-            redRing.endRing = 0.15
+            
         case 2:
             print("second")
         case 3:
@@ -36,7 +37,7 @@ class ViewController: UIViewController, UITabBarDelegate {
     }
     
     override func viewDidLoad() {
-        characterTab(characterTabs, didSelectItem: killsTab)
+        dataTab(dataTabs, didSelectItem: killsTab)
         super.viewDidLoad()
         redRing.endRing = 0.15
         redRing.ringStrokeWidth = 35.0

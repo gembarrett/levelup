@@ -12,4 +12,5 @@ class Character {
     var kills: Float = 0.0
     var damage: Float = 0.0
     var points: Float = 0.0
+    
 }
