@@ -10,13 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, UITabBarDelegate {
 
-    @IBOutlet weak var percentage: UILabel!
     @IBOutlet weak var redRing: RingsView!
     @IBOutlet weak var orangeRing: RingsView!
     @IBOutlet weak var yellowRing: RingsView!
-//    @IBAction func whiteSlider(sender: UISlider) {
-//        whiteRing.endRing = CGFloat(sender.value)
-//    }
     
     @IBOutlet weak var scoutTab: UITabBarItem!
     @IBOutlet weak var pyroTab: UITabBarItem!
@@ -24,15 +20,11 @@ class ViewController: UIViewController, UITabBarDelegate {
     
     @IBOutlet weak var characterTabs: UITabBar!
     
-    var scoutKills:Float = 0.0, scoutDamage:Float = 0.0, scoutPoints:Float = 0.0
-    var pyroKills:Float = 0.0, pyroDamage:Float = 0.0, pyroPoints:Float = 0.0
-    var demomanKills:Float = 0.0, demomanDamage:Float = 0.0, demomanPoints:Float = 0.0
-    
-    func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
-        
+    func characterTab(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
         switch item.tag {
         case 1:
             print("first")
+            redRing.endRing = 0.15
         case 2:
             print("second")
         case 3:
@@ -42,9 +34,9 @@ class ViewController: UIViewController, UITabBarDelegate {
         }
         
     }
-
     
     override func viewDidLoad() {
+        characterTab(characterTabs, didSelectItem: scoutTab)
         super.viewDidLoad()
         redRing.endRing = 0.15
         redRing.ringStrokeWidth = 35.0
