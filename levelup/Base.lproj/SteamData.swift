@@ -9,13 +9,35 @@
 import Foundation
 
 class SteamData {
-//    var error: NSError?
-//    let jsonPath = "tf2.json"
-//    let jsonData = NSData.dataWithContentsOfFile(jsonPath, options: .DataReadingMappedIfSafe, error: nil)
-//    
-//    let jsonDict = NSJSONSerialization.JSONObjectWithData(jsonData, options: nil, error: &error) as NSDictionary
     
-    var damageDealt = 5000
-    var kills = 20
-    var points = 100
+    
+    let file = "tf2.json"
+    let dirs : [String] = NSSearchPathForDirectoriesInDomains(
+        NSSearchpathDirectory.DocumentDirectory,
+        NSSearchPathDomainMask.AllDomainMask,
+        true) as [String]
+    
+//    if (dirs != nil) {
+    let directories: [String] = dirs
+    let dir = directories[0]
+    let path = dir.stringByAppendingPathComponent(file)
+//    }
+    
+    var data = NSData(contentsOfFile:path, options: nil, error: nil)
+    println("jsonData \(data)")
+//    println("jsonData \(jsonData)")
+//    
+//    var json: Array!
+//    do {
+//        json = try NSJSONSerialization.JSONObjectWithData(JSONData, options: NSJSONReadingOptions()) as? Array
+//    } catch {
+//        print(error)
+//    }
+//    
+//    guard let item = json[0] as? [String: AnyObject],
+//    let person = item["person"] as? [String: AnyObject],
+//    let age = person["age"] as? Int else {
+//    return;
+//    }
+//    print("Dani's age is \(age)")
 }

@@ -51,6 +51,7 @@ class RingsView: UIView {
         CGContextSetLineWidth(context, ringStrokeWidth * 0.8)
         CGContextAddArc(context, middleBit.x, middleBit.y, radius, start, end, 0)
         CGContextStrokePath(context)
+        
     }
 
 }
