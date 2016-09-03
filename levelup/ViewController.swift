@@ -14,9 +14,9 @@ class ViewController: UIViewController, UITabBarDelegate {
     @IBOutlet weak var orangeRing: RingsView!
     @IBOutlet weak var yellowRing: RingsView!
     
-    @IBOutlet weak var scoutTab: UITabBarItem!
-    @IBOutlet weak var pyroTab: UITabBarItem!
-    @IBOutlet weak var demomanTab: UITabBarItem!
+    @IBOutlet weak var killsTab: UITabBarItem!
+    @IBOutlet weak var damageTab: UITabBarItem!
+    @IBOutlet weak var pointsTab: UITabBarItem!
     
     @IBOutlet weak var characterTabs: UITabBar!
     
@@ -36,7 +36,7 @@ class ViewController: UIViewController, UITabBarDelegate {
     }
     
     override func viewDidLoad() {
-        characterTab(characterTabs, didSelectItem: scoutTab)
+        characterTab(characterTabs, didSelectItem: killsTab)
         super.viewDidLoad()
         redRing.endRing = 0.15
         redRing.ringStrokeWidth = 35.0
