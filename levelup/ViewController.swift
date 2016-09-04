@@ -18,10 +18,10 @@ class ViewController: UIViewController, UITabBarDelegate {
     @IBOutlet weak var damageTab: UITabBarItem!
     @IBOutlet weak var pointsTab: UITabBarItem!
     @IBOutlet weak var dataTabs: UITabBar!
-    
-    @IBOutlet weak var scoutLbl: UILabel!
-    @IBOutlet weak var pyroLbl: UILabel!
-    @IBOutlet weak var demomanLbl: UILabel!
+        
+    @IBOutlet weak var scoutNumber: UILabel!
+    @IBOutlet weak var demomanNumber: UILabel!
+    @IBOutlet weak var pyroNumber: UILabel!
     
     func dataTab(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
         dataTabs.selectedItem = killsTab
@@ -31,16 +31,25 @@ class ViewController: UIViewController, UITabBarDelegate {
             redRing.endRing = 0.48
             orangeRing.endRing = 0.90
             yellowRing.endRing = 0.15
+            scoutNumber.text = String(redRing.endRing * 100)
+            demomanNumber.text = String(orangeRing.endRing * 100)
+            pyroNumber.text = String(yellowRing.endRing * 100)
         case 2:
             print("damage")
             redRing.endRing = 0.14502
             orangeRing.endRing = 0.24762
             yellowRing.endRing = 0.04710
+            scoutNumber.text = String(redRing.endRing * 10000)
+            demomanNumber.text = String(orangeRing.endRing * 10000)
+            pyroNumber.text = String(yellowRing.endRing * 10000)
         case 3:
             print("points")
             redRing.endRing = 0.105
             orangeRing.endRing = 0.177
             yellowRing.endRing = 0.022
+            scoutNumber.text = String(redRing.endRing * 1000)
+            demomanNumber.text = String(orangeRing.endRing * 1000)
+            pyroNumber.text = String(yellowRing.endRing * 1000)
         default:
             break
         }
@@ -53,17 +62,14 @@ class ViewController: UIViewController, UITabBarDelegate {
         redRing.ringStrokeWidth = 35.0
         let backgroundRingColour = UIColor(white: 0.15, alpha: 1.0)
         redRing.ringBackgroundColour = backgroundRingColour
-        scoutLbl.textColor = UIColor.redColor()
 
         orangeRing.ringColour = UIColor.orangeColor()
         orangeRing.ringStrokeWidth = 30.0
         orangeRing.ringBackgroundColour = backgroundRingColour
-        demomanLbl.textColor = UIColor.orangeColor()
         
         yellowRing.ringColour = UIColor.yellowColor()
         yellowRing.ringStrokeWidth = 25.0
         yellowRing.ringBackgroundColour = backgroundRingColour
-        pyroLbl.textColor = UIColor.yellowColor()
     }
 
     override func didReceiveMemoryWarning() {
