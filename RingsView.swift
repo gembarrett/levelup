@@ -18,7 +18,7 @@ class RingsView: UIView {
     var ringStrokeWidth:CGFloat = 10.0
     var ringColour = UIColor.redColor()
     var ringBackgroundColour = UIColor.blackColor()
-
+    
     override func drawRect(rect: CGRect) {
         let fullLoop = 2.0 * CGFloat(M_PI)
         let start:CGFloat = -0.25 * fullLoop

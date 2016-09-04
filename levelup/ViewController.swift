@@ -14,42 +14,42 @@ class ViewController: UIViewController, UITabBarDelegate {
     @IBOutlet weak var orangeRing: RingsView!
     @IBOutlet weak var yellowRing: RingsView!
     
-    @IBOutlet weak var killsTab: UITabBarItem!
-    @IBOutlet weak var damageTab: UITabBarItem!
-    @IBOutlet weak var pointsTab: UITabBarItem!
+    @IBOutlet weak var killsTab: DataTab!
+    @IBOutlet weak var damageTab: DataTab!
+    @IBOutlet weak var pointsTab: DataTab!
     @IBOutlet weak var dataTabs: UITabBar!
         
     @IBOutlet weak var scoutNumber: UILabel!
     @IBOutlet weak var demomanNumber: UILabel!
     @IBOutlet weak var pyroNumber: UILabel!
-    
+        
     func dataTab(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
         dataTabs.selectedItem = killsTab
         switch item.tag {
         case 1:
             print("kills")
-            redRing.endRing = 0.48
-            orangeRing.endRing = 0.90
-            yellowRing.endRing = 0.15
-            scoutNumber.text = String(redRing.endRing * 100)
-            demomanNumber.text = String(orangeRing.endRing * 100)
-            pyroNumber.text = String(yellowRing.endRing * 100)
+            scoutNumber.text = String(killsTab.scoutInt)
+            demomanNumber.text = String(killsTab.demomanInt)
+            pyroNumber.text = String(killsTab.pyroInt)
+            redRing.endRing = CGFloat(killsTab.scoutFloat)
+            orangeRing.endRing = CGFloat(killsTab.demomanFloat)
+            yellowRing.endRing = CGFloat(killsTab.pyroFloat)
         case 2:
             print("damage")
-            redRing.endRing = 0.14502
-            orangeRing.endRing = 0.24762
-            yellowRing.endRing = 0.04710
-            scoutNumber.text = String(redRing.endRing * 10000)
-            demomanNumber.text = String(orangeRing.endRing * 10000)
-            pyroNumber.text = String(yellowRing.endRing * 10000)
+            scoutNumber.text = String(damageTab.scoutInt)
+            demomanNumber.text = String(damageTab.demomanInt)
+            pyroNumber.text = String(damageTab.pyroInt)
+            redRing.endRing = CGFloat(damageTab.scoutFloat)
+            orangeRing.endRing = CGFloat(damageTab.demomanFloat)
+            yellowRing.endRing = CGFloat(damageTab.pyroFloat)
         case 3:
             print("points")
-            redRing.endRing = 0.105
-            orangeRing.endRing = 0.177
-            yellowRing.endRing = 0.022
-            scoutNumber.text = String(redRing.endRing * 1000)
-            demomanNumber.text = String(orangeRing.endRing * 1000)
-            pyroNumber.text = String(yellowRing.endRing * 1000)
+            scoutNumber.text = String(pointsTab.scoutInt)
+            demomanNumber.text = String(pointsTab.demomanInt)
+            pyroNumber.text = String(pointsTab.pyroInt)
+            redRing.endRing = CGFloat(pointsTab.scoutFloat)
+            orangeRing.endRing = CGFloat(pointsTab.demomanFloat)
+            yellowRing.endRing = CGFloat(pointsTab.pyroFloat)
         default:
             break
         }

@@ -20,6 +20,7 @@
 		01446C601D7C1F520082BB55 /* kills@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01446C5A1D7C1F520082BB55 /* kills@2x.png */; };
 		01446C611D7C1F520082BB55 /* points.png in Resources */ = {isa = PBXBuildFile; fileRef = 01446C5B1D7C1F520082BB55 /* points.png */; };
 		01446C621D7C1F520082BB55 /* points@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01446C5C1D7C1F520082BB55 /* points@2x.png */; };
+		01D29CDE1D7C64F60060B1B2 /* DataTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D29CDD1D7C64F60060B1B2 /* DataTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		01446C5A1D7C1F520082BB55 /* kills@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kills@2x.png"; path = "levelup/Assets.xcassets/kills@2x.png"; sourceTree = "<group>"; };
 		01446C5B1D7C1F520082BB55 /* points.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = points.png; path = levelup/Assets.xcassets/points.png; sourceTree = "<group>"; };
 		01446C5C1D7C1F520082BB55 /* points@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "points@2x.png"; path = "levelup/Assets.xcassets/points@2x.png"; sourceTree = "<group>"; };
+		01D29CDD1D7C64F60060B1B2 /* DataTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataTab.swift; path = ../DataTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				0121A5761D770FFE00DDCC22 /* AppDelegate.swift */,
 				0121A5781D770FFE00DDCC22 /* ViewController.swift */,
 				0121A5881D7764DE00DDCC22 /* RingsView.swift */,
+				01D29CDD1D7C64F60060B1B2 /* DataTab.swift */,
 				0121A57A1D770FFE00DDCC22 /* Main.storyboard */,
 				0121A57D1D770FFE00DDCC22 /* Assets.xcassets */,
 				0121A57F1D770FFE00DDCC22 /* LaunchScreen.storyboard */,
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0121A5791D770FFE00DDCC22 /* ViewController.swift in Sources */,
+				01D29CDE1D7C64F60060B1B2 /* DataTab.swift in Sources */,
 				0121A5891D7764DE00DDCC22 /* RingsView.swift in Sources */,
 				0121A5771D770FFE00DDCC22 /* AppDelegate.swift in Sources */,
 			);
