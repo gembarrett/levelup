@@ -56,6 +56,9 @@
                                     <tabBarItem tag="2" title="Damage" image="damage.png" id="LNQ-mZ-ui4"/>
                                     <tabBarItem tag="3" title="Points" image="points.png" id="lTp-YW-jyF"/>
                                 </items>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="61v-dG-1Qj"/>
+                                </connections>
                             </tabBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCS-Mr-nrh">
                                 <rect key="frame" x="172" y="427" width="80" height="20"/>

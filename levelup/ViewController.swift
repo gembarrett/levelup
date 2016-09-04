@@ -14,59 +14,61 @@ class ViewController: UIViewController, UITabBarDelegate {
     @IBOutlet weak var orangeRing: RingsView!
     @IBOutlet weak var yellowRing: RingsView!
     
-    @IBOutlet weak var killsTab: DataTab!
-    @IBOutlet weak var damageTab: DataTab!
-    @IBOutlet weak var pointsTab: DataTab!
+    @IBOutlet weak var killsTab: UITabBarItem!
+    @IBOutlet weak var damageTab: UITabBarItem!
+    @IBOutlet weak var pointsTab: UITabBarItem!
     @IBOutlet weak var dataTabs: UITabBar!
         
     @IBOutlet weak var scoutNumber: UILabel!
     @IBOutlet weak var demomanNumber: UILabel!
     @IBOutlet weak var pyroNumber: UILabel!
+    
+    private var dataArray = [Data]()
         
-    func dataTab(dataTabs: UITabBar, didSelectItem item: DataTab) {
-        switch item.tag {
-        case 1:
-//            print(killsTab.scoutInt)
-            scoutNumber.text = String(20)
-            demomanNumber.text = String(20)
-            pyroNumber.text = String(20)
-            redRing.endRing = CGFloat(0.2)
-            orangeRing.endRing = CGFloat(0.2)
-            yellowRing.endRing = CGFloat(0.2)
-//            scoutNumber.text = String(killsTab.scoutInt)
-//            demomanNumber.text = String(killsTab.demomanInt)
-//            pyroNumber.text = String(killsTab.pyroInt)
-//            redRing.endRing = CGFloat(killsTab.scoutFloat)
-//            orangeRing.endRing = CGFloat(killsTab.demomanFloat)
-//            yellowRing.endRing = CGFloat(killsTab.pyroFloat)
-        case 2:
-            print("damage")
-            scoutNumber.text = String(damageTab.scoutInt)
-            demomanNumber.text = String(damageTab.demomanInt)
-            pyroNumber.text = String(damageTab.pyroInt)
-            redRing.endRing = CGFloat(damageTab.scoutFloat)
-            orangeRing.endRing = CGFloat(damageTab.demomanFloat)
-            yellowRing.endRing = CGFloat(damageTab.pyroFloat)
-        case 3:
-            print("points")
-            scoutNumber.text = String(pointsTab.scoutInt)
-            demomanNumber.text = String(pointsTab.demomanInt)
-            pyroNumber.text = String(pointsTab.pyroInt)
-            redRing.endRing = CGFloat(pointsTab.scoutFloat)
-            orangeRing.endRing = CGFloat(pointsTab.demomanFloat)
-            yellowRing.endRing = CGFloat(pointsTab.pyroFloat)
-        default:
-            break
-        }
+    func tabBar(dataTabs: UITabBar, didSelectItem item: UITabBarItem) {
+        let data = dataArray[item.tag-1]
+        self.updateUI(with: data)
     }
     
-    func tabBar(tabBar: UITabBar, _didSelectItem damageTab: DataTab) {
-        print("changed")
+    private func updateUI(with data: Data) {
+        scoutNumber.text = String(data.scoutInt)
+        demomanNumber.text = String(data.demomanInt)
+        pyroNumber.text = String(data.pyroInt)
+        redRing.endRing = CGFloat(data.scoutFloat)
+        orangeRing.endRing = CGFloat(data.demomanFloat)
+        yellowRing.endRing = CGFloat(data.pyroFloat)
     }
-
     
     override func viewDidLoad() {
-        dataTab(dataTabs, didSelectItem: killsTab)
+        let kills = Data()
+        kills.scoutInt = 20
+        kills.demomanInt = 20
+        kills.pyroInt = 20
+        kills.scoutFloat = 0.2
+        kills.demomanFloat = 0.2
+        kills.pyroFloat = 0.2
+        dataArray.append(kills)
+        
+        let damage = Data()
+        damage.scoutInt = 10
+        damage.demomanInt = 10
+        damage.pyroInt = 10
+        damage.scoutFloat = 0.1
+        damage.demomanFloat = 0.1
+        damage.pyroFloat = 0.1
+        dataArray.append(damage)
+        
+        let points = Data()
+        points.scoutInt = 5
+        points.demomanInt = 5
+        points.pyroInt = 5
+        points.scoutFloat = 0.05
+        points.demomanFloat = 0.05
+        points.pyroFloat = 0.05
+        dataArray.append(points)
+        
+        self.updateUI(with: dataArray[0])
+        
         super.viewDidLoad()
         redRing.ringStrokeWidth = 35.0
         let backgroundRingColour = UIColor(white: 0.15, alpha: 1.0)
@@ -79,8 +81,6 @@ class ViewController: UIViewController, UITabBarDelegate {
         yellowRing.ringColour = UIColor.yellowColor()
         yellowRing.ringStrokeWidth = 25.0
         yellowRing.ringBackgroundColour = backgroundRingColour
-        
-        tabBar(dataTabs, _didSelectItem: damageTab)
         
     }
 

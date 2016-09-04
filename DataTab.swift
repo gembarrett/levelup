@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DataTab: UITabBarItem {
+class Data {
 //    let scoutKills = 48
 //    let demomanKills = 90
 //    let pyroKills = 15
@@ -27,7 +27,7 @@ class DataTab: UITabBarItem {
     
     var scoutFloat:Float = 0.0, demomanFloat:Float = 0.0, pyroFloat: Float = 0.0
 
-    func tabBar(tabBar: UITabBar, didSelectItem item: DataTab) {
+    func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
         print("changed")
     }
 
