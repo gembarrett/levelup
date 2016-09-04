@@ -52,9 +52,9 @@
                                 <rect key="frame" x="0.0" y="551" width="600" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem tag="1" title="Kills" id="96x-QP-AfA"/>
-                                    <tabBarItem tag="2" title="Damage" id="LNQ-mZ-ui4"/>
-                                    <tabBarItem tag="3" title="Points" id="lTp-YW-jyF"/>
+                                    <tabBarItem tag="1" title="Kills" image="kills.png" id="96x-QP-AfA"/>
+                                    <tabBarItem tag="2" title="Damage" image="damage.png" id="LNQ-mZ-ui4"/>
+                                    <tabBarItem tag="3" title="Points" image="points.png" id="lTp-YW-jyF"/>
                                 </items>
                             </tabBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCS-Mr-nrh">
@@ -167,4 +167,9 @@
             <point key="canvasLocation" x="215" y="360"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="damage.png" width="30" height="30"/>
+        <image name="kills.png" width="30" height="30"/>
+        <image name="points.png" width="30" height="30"/>
+    </resources>
 </document>
