@@ -58,12 +58,12 @@ class ViewController: UIViewController, UITabBarDelegate {
         orangeRing.ringColour = UIColor.orangeColor()
         orangeRing.ringStrokeWidth = 30.0
         orangeRing.ringBackgroundColour = backgroundRingColour
-        pyroLbl.textColor = UIColor.orangeColor()
+        demomanLbl.textColor = UIColor.orangeColor()
         
         yellowRing.ringColour = UIColor.yellowColor()
         yellowRing.ringStrokeWidth = 25.0
         yellowRing.ringBackgroundColour = backgroundRingColour
-        demomanLbl.textColor = UIColor.yellowColor()
+        pyroLbl.textColor = UIColor.yellowColor()
     }
 
     override func didReceiveMemoryWarning() {
