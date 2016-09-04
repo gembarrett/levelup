@@ -27,4 +27,8 @@ class DataTab: UITabBarItem {
     
     var scoutFloat:Float = 0.0, demomanFloat:Float = 0.0, pyroFloat: Float = 0.0
 
+    func tabBar(tabBar: UITabBar, didSelectItem item: DataTab) {
+        print("changed")
+    }
+
 }

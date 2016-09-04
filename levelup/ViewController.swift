@@ -23,17 +23,22 @@ class ViewController: UIViewController, UITabBarDelegate {
     @IBOutlet weak var demomanNumber: UILabel!
     @IBOutlet weak var pyroNumber: UILabel!
         
-    func dataTab(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
-        dataTabs.selectedItem = killsTab
+    func dataTab(dataTabs: UITabBar, didSelectItem item: DataTab) {
         switch item.tag {
         case 1:
-            print("kills")
-            scoutNumber.text = String(killsTab.scoutInt)
-            demomanNumber.text = String(killsTab.demomanInt)
-            pyroNumber.text = String(killsTab.pyroInt)
-            redRing.endRing = CGFloat(killsTab.scoutFloat)
-            orangeRing.endRing = CGFloat(killsTab.demomanFloat)
-            yellowRing.endRing = CGFloat(killsTab.pyroFloat)
+//            print(killsTab.scoutInt)
+            scoutNumber.text = String(20)
+            demomanNumber.text = String(20)
+            pyroNumber.text = String(20)
+            redRing.endRing = CGFloat(0.2)
+            orangeRing.endRing = CGFloat(0.2)
+            yellowRing.endRing = CGFloat(0.2)
+//            scoutNumber.text = String(killsTab.scoutInt)
+//            demomanNumber.text = String(killsTab.demomanInt)
+//            pyroNumber.text = String(killsTab.pyroInt)
+//            redRing.endRing = CGFloat(killsTab.scoutFloat)
+//            orangeRing.endRing = CGFloat(killsTab.demomanFloat)
+//            yellowRing.endRing = CGFloat(killsTab.pyroFloat)
         case 2:
             print("damage")
             scoutNumber.text = String(damageTab.scoutInt)
@@ -53,8 +58,12 @@ class ViewController: UIViewController, UITabBarDelegate {
         default:
             break
         }
-        
     }
+    
+    func tabBar(tabBar: UITabBar, _didSelectItem damageTab: DataTab) {
+        print("changed")
+    }
+
     
     override func viewDidLoad() {
         dataTab(dataTabs, didSelectItem: killsTab)
@@ -70,6 +79,9 @@ class ViewController: UIViewController, UITabBarDelegate {
         yellowRing.ringColour = UIColor.yellowColor()
         yellowRing.ringStrokeWidth = 25.0
         yellowRing.ringBackgroundColour = backgroundRingColour
+        
+        tabBar(dataTabs, _didSelectItem: damageTab)
+        
     }
 
     override func didReceiveMemoryWarning() {
