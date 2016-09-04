@@ -24,7 +24,7 @@ class RingsView: UIView {
         let start:CGFloat = -0.25 * fullLoop
         let end:CGFloat = endRing * fullLoop + start
         
-        var middleBit = CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect))
+        let middleBit = CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect))
         
         var radius:CGFloat = 0.0
         if CGRectGetWidth(rect) > CGRectGetHeight(rect) {
@@ -35,7 +35,7 @@ class RingsView: UIView {
         
         let context = UIGraphicsGetCurrentContext()
         
-        let colours = CGColorSpaceCreateDeviceRGB()
+//        let colours = CGColorSpaceCreateDeviceRGB()
         
         CGContextSetLineWidth(context, ringStrokeWidth)
         CGContextSetLineCap(context, CGLineCap.Round)
