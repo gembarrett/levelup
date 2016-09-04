@@ -14,9 +14,12 @@
 		0121A5811D770FFE00DDCC22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0121A57F1D770FFE00DDCC22 /* LaunchScreen.storyboard */; };
 		0121A5891D7764DE00DDCC22 /* RingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121A5881D7764DE00DDCC22 /* RingsView.swift */; };
 		0121A58B1D779F6D00DDCC22 /* tf2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0121A58A1D779F6D00DDCC22 /* tf2.json */; };
-		0121A58F1D77AA0500DDCC22 /* demoman.png in Resources */ = {isa = PBXBuildFile; fileRef = 0121A58C1D77AA0500DDCC22 /* demoman.png */; };
-		0121A5901D77AA0500DDCC22 /* pyro.png in Resources */ = {isa = PBXBuildFile; fileRef = 0121A58D1D77AA0500DDCC22 /* pyro.png */; };
-		0121A5911D77AA0500DDCC22 /* scout.png in Resources */ = {isa = PBXBuildFile; fileRef = 0121A58E1D77AA0500DDCC22 /* scout.png */; };
+		01446C5D1D7C1F520082BB55 /* damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 01446C571D7C1F520082BB55 /* damage.png */; };
+		01446C5E1D7C1F520082BB55 /* damage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01446C581D7C1F520082BB55 /* damage@2x.png */; };
+		01446C5F1D7C1F520082BB55 /* kills.png in Resources */ = {isa = PBXBuildFile; fileRef = 01446C591D7C1F520082BB55 /* kills.png */; };
+		01446C601D7C1F520082BB55 /* kills@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01446C5A1D7C1F520082BB55 /* kills@2x.png */; };
+		01446C611D7C1F520082BB55 /* points.png in Resources */ = {isa = PBXBuildFile; fileRef = 01446C5B1D7C1F520082BB55 /* points.png */; };
+		01446C621D7C1F520082BB55 /* points@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01446C5C1D7C1F520082BB55 /* points@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +32,12 @@
 		0121A5821D770FFE00DDCC22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0121A5881D7764DE00DDCC22 /* RingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RingsView.swift; path = ../RingsView.swift; sourceTree = "<group>"; };
 		0121A58A1D779F6D00DDCC22 /* tf2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tf2.json; sourceTree = "<group>"; };
-		0121A58C1D77AA0500DDCC22 /* demoman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demoman.png; sourceTree = "<group>"; };
-		0121A58D1D77AA0500DDCC22 /* pyro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pyro.png; sourceTree = "<group>"; };
-		0121A58E1D77AA0500DDCC22 /* scout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scout.png; sourceTree = "<group>"; };
+		01446C571D7C1F520082BB55 /* damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = damage.png; path = levelup/Assets.xcassets/damage.png; sourceTree = "<group>"; };
+		01446C581D7C1F520082BB55 /* damage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "damage@2x.png"; path = "levelup/Assets.xcassets/damage@2x.png"; sourceTree = "<group>"; };
+		01446C591D7C1F520082BB55 /* kills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kills.png; path = levelup/Assets.xcassets/kills.png; sourceTree = "<group>"; };
+		01446C5A1D7C1F520082BB55 /* kills@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kills@2x.png"; path = "levelup/Assets.xcassets/kills@2x.png"; sourceTree = "<group>"; };
+		01446C5B1D7C1F520082BB55 /* points.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = points.png; path = levelup/Assets.xcassets/points.png; sourceTree = "<group>"; };
+		01446C5C1D7C1F520082BB55 /* points@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "points@2x.png"; path = "levelup/Assets.xcassets/points@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,12 @@
 			children = (
 				0121A5751D770FFE00DDCC22 /* levelup */,
 				0121A5741D770FFE00DDCC22 /* Products */,
+				01446C571D7C1F520082BB55 /* damage.png */,
+				01446C581D7C1F520082BB55 /* damage@2x.png */,
+				01446C591D7C1F520082BB55 /* kills.png */,
+				01446C5A1D7C1F520082BB55 /* kills@2x.png */,
+				01446C5B1D7C1F520082BB55 /* points.png */,
+				01446C5C1D7C1F520082BB55 /* points@2x.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +83,6 @@
 				0121A57D1D770FFE00DDCC22 /* Assets.xcassets */,
 				0121A57F1D770FFE00DDCC22 /* LaunchScreen.storyboard */,
 				0121A5821D770FFE00DDCC22 /* Info.plist */,
-				0121A58C1D77AA0500DDCC22 /* demoman.png */,
-				0121A58D1D77AA0500DDCC22 /* pyro.png */,
-				0121A58E1D77AA0500DDCC22 /* scout.png */,
 				0121A58A1D779F6D00DDCC22 /* tf2.json */,
 			);
 			path = levelup;
@@ -137,13 +146,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01446C601D7C1F520082BB55 /* kills@2x.png in Resources */,
+				01446C5F1D7C1F520082BB55 /* kills.png in Resources */,
 				0121A58B1D779F6D00DDCC22 /* tf2.json in Resources */,
 				0121A5811D770FFE00DDCC22 /* LaunchScreen.storyboard in Resources */,
 				0121A57E1D770FFE00DDCC22 /* Assets.xcassets in Resources */,
-				0121A58F1D77AA0500DDCC22 /* demoman.png in Resources */,
-				0121A5911D77AA0500DDCC22 /* scout.png in Resources */,
+				01446C621D7C1F520082BB55 /* points@2x.png in Resources */,
+				01446C611D7C1F520082BB55 /* points.png in Resources */,
+				01446C5D1D7C1F520082BB55 /* damage.png in Resources */,
 				0121A57C1D770FFE00DDCC22 /* Main.storyboard in Resources */,
-				0121A5901D77AA0500DDCC22 /* pyro.png in Resources */,
+				01446C5E1D7C1F520082BB55 /* damage@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
