@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011CD4901D7EE9C000D0F2A6 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011CD48F1D7EE9C000D0F2A6 /* DataLoader.swift */; };
 		0121A5771D770FFE00DDCC22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121A5761D770FFE00DDCC22 /* AppDelegate.swift */; };
 		0121A5791D770FFE00DDCC22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121A5781D770FFE00DDCC22 /* ViewController.swift */; };
 		0121A57C1D770FFE00DDCC22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0121A57A1D770FFE00DDCC22 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		011CD48F1D7EE9C000D0F2A6 /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		0121A5731D770FFE00DDCC22 /* levelup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = levelup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0121A5761D770FFE00DDCC22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0121A5781D770FFE00DDCC22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			children = (
 				0121A5761D770FFE00DDCC22 /* AppDelegate.swift */,
 				0121A5781D770FFE00DDCC22 /* ViewController.swift */,
+				011CD48F1D7EE9C000D0F2A6 /* DataLoader.swift */,
 				0121A5881D7764DE00DDCC22 /* RingsView.swift */,
 				01D29CDD1D7C64F60060B1B2 /* DataTab.swift */,
 				0121A57A1D770FFE00DDCC22 /* Main.storyboard */,
@@ -169,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011CD4901D7EE9C000D0F2A6 /* DataLoader.swift in Sources */,
 				0121A5791D770FFE00DDCC22 /* ViewController.swift in Sources */,
 				01D29CDE1D7C64F60060B1B2 /* DataTab.swift in Sources */,
 				0121A5891D7764DE00DDCC22 /* RingsView.swift in Sources */,

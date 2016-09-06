@@ -23,10 +23,10 @@ class ViewController: UIViewController, UITabBarDelegate {
     @IBOutlet weak var demomanNumber: UILabel!
     @IBOutlet weak var pyroNumber: UILabel!
     
-    private var dataArray = [Data]()
+    private let dataLoader = DataLoader()
         
     func tabBar(dataTabs: UITabBar, didSelectItem item: UITabBarItem) {
-        let data = dataArray[item.tag-1]
+        let data = dataLoader.dataArray[item.tag-1]
         self.updateUI(with: data)
     }
     
@@ -40,34 +40,8 @@ class ViewController: UIViewController, UITabBarDelegate {
     }
     
     override func viewDidLoad() {
-        let kills = Data()
-        kills.scoutInt = 20
-        kills.demomanInt = 20
-        kills.pyroInt = 20
-        kills.scoutFloat = 0.2
-        kills.demomanFloat = 0.2
-        kills.pyroFloat = 0.2
-        dataArray.append(kills)
         
-        let damage = Data()
-        damage.scoutInt = 10
-        damage.demomanInt = 10
-        damage.pyroInt = 10
-        damage.scoutFloat = 0.1
-        damage.demomanFloat = 0.1
-        damage.pyroFloat = 0.1
-        dataArray.append(damage)
-        
-        let points = Data()
-        points.scoutInt = 5
-        points.demomanInt = 5
-        points.pyroInt = 5
-        points.scoutFloat = 0.05
-        points.demomanFloat = 0.05
-        points.pyroFloat = 0.05
-        dataArray.append(points)
-        
-        self.updateUI(with: dataArray[0])
+        self.updateUI(with: dataLoader.dataArray[0])
         
         super.viewDidLoad()
         redRing.ringStrokeWidth = 35.0
