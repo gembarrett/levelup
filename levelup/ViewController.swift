@@ -42,6 +42,7 @@ class ViewController: UIViewController, UITabBarDelegate {
     override func viewDidLoad() {
         
         self.updateUI(with: dataLoader.dataArray[0])
+        self.dataTabs.selectedItem = self.killsTab
         
         super.viewDidLoad()
         redRing.ringStrokeWidth = 35.0

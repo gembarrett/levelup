@@ -17,33 +17,40 @@ class DataLoader {
     private func loadData() {
         
         let json = self.jsonObject()
+        guard let playerStats = json?["playerstats"] as? [String:AnyObject] else {
+            return
+        }
         
-//        let kills = Data()
-//        kills.scoutInt = 20
-//        kills.demomanInt = 20
-//        kills.pyroInt = 20
-//        kills.scoutFloat = 0.2
-//        kills.demomanFloat = 0.2
-//        kills.pyroFloat = 0.2
-//        dataArray.append(kills)
-//        
-//        let damage = Data()
-//        damage.scoutInt = 10
-//        damage.demomanInt = 10
-//        damage.pyroInt = 10
-//        damage.scoutFloat = 0.1
-//        damage.demomanFloat = 0.1
-//        damage.pyroFloat = 0.1
-//        dataArray.append(damage)
-//        
-//        let points = Data()
-//        points.scoutInt = 5
-//        points.demomanInt = 5
-//        points.pyroInt = 5
-//        points.scoutFloat = 0.05
-//        points.demomanFloat = 0.05
-//        points.pyroFloat = 0.05
-//        dataArray.append(points)
+        // array of dictionaries
+        guard let stats = playerStats["stats"] as? [[String:AnyObject]] else {
+            return
+        }
+
+        var statsDict = [String: Int]()
+        for stat in stats {
+            let name = stat["name"] as! String
+            let value = stat["value"] as! Int
+            statsDict[name] = value
+        }
+        
+        
+        let kills = Data(max: 100.0)
+        kills.scoutInt = statsDict["Scout.accum.iNumberOfKills"] ?? 0
+        kills.demomanInt = statsDict["Demoman.accum.iNumberOfKills"] ?? 0
+        kills.pyroInt = statsDict["Pyro.accum.iNumberOfKills"] ?? 0
+        dataArray.append(kills)
+        
+        let damage = Data(max: 50000.0)
+        damage.scoutInt = statsDict["Scout.accum.iDamageDealt"] ?? 0
+        damage.demomanInt = statsDict["Demoman.accum.iDamageDealt"] ?? 0
+        damage.pyroInt = statsDict["Pyro.accum.iDamageDealt"] ?? 0
+        dataArray.append(damage)
+        
+        let points = Data(max: 200.0)
+        points.scoutInt = statsDict["Scout.accum.iPointsScored"] ?? 0
+        points.demomanInt = statsDict["Demoman.accum.iPointsScored"] ?? 0
+        points.pyroInt = statsDict["Pyro.accum.iPointsScored"] ?? 0
+        dataArray.append(points)
 
     }
     
